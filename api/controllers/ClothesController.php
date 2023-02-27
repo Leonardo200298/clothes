@@ -3,5 +3,7 @@ class ClothesController{
     private $ClothesModel;
     private $ClothesView;
 
-    function 
+    function __construct(){
+        
+    }
 }
