@@ -9,6 +9,7 @@ class ClothesModel{
 
     public function conseguirProductosDb(){
         $sentencia = $this->db->prepare("SELECT * FROM clothes");
+        var_dump($sentencia);
         $sentencia->execute();
         $productos = $sentencia->fetch(PDO::FETCH_OBJ);
         return $productos;

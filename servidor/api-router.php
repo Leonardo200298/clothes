@@ -1,14 +1,15 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
 
 require_once './libs/router.php';
 require_once './controllers/ClothesController.php';
-/* api\controllers\ClothesController.php */
-/* api\controllers */
+
 
 $router = new Router();
 
 /* $url, $verb, $controller, $method */
-$router->addRoute('api/productos', 'GET', 'ClothesController', 'conseguirProductos');
+$router->addRoute('productos', 'GET', 'ClothesController', 'conseguirProductos');
 
 
 // ejecuta la ruta (sea cual sea)
