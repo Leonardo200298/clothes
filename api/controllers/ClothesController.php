@@ -8,8 +8,7 @@ class ClothesController{
     private $data;
 
     function __construct(){
-        echo "checkeo";
-        die();
+       
         $this->model = new ClothesModel();
         $this->view = new ClothesView();
         $this->data = file_get_contents("php://input");
@@ -20,8 +19,7 @@ class ClothesController{
     }
    
     public function conseguirProductos(){
-        echo "Entro";
-        die();
+        
         $productos = $this->model->conseguirProductosDb();
         if (!empty($productos)){
             $this->view->respuesta($productos);

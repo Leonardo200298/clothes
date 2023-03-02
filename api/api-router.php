@@ -11,6 +11,8 @@ $router = new Router();
 /* $url, $verb, $controller, $method */
 $router->addRoute('productos', 'GET', 'ClothesController', 'conseguirProductos');
 
+/* Endpoint para probar:  http://localhost/clothes/api/productos*/
+
 
 // ejecuta la ruta (sea cual sea)
 $router->route($_GET["resource"], $_SERVER['REQUEST_METHOD']);
